@@ -5,10 +5,12 @@
 	<head>
 		<title>Mobile and web</title>
 		<meta charset="UTF-8">
+		<script src = "jquery-3.2.1.js"></script>
 		<script src = "jQ.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="style.css">
 	</head>
 
@@ -19,14 +21,14 @@
 
 <!------------------------------ NavBar ------------------------------------>
 
-<nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="#"><img src="1506600889253_7ce1b19bc3550fcf2c8d5a30c83a2f90.png"></a>
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light" id="navscr">
+  <a class="navbar-brand" href="#"><img src="logo.svg"></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -49,6 +51,8 @@
 </nav>
 <!--------------------------------------------------------------------------->
 
+
+<div id="ovrlay">
 	<div class="text-in-header">
 
 		<h6 id="h6"><b>New Branding agency</b></h6>
@@ -56,46 +60,73 @@
 		<h1>You publish on web</h1>
 
 	</div>
+<a href="#circle-down">
+        <p class="text-center">
+            <i class="fa fa-chevron-circle-down text-white fa-4x">
+            </i>
+        </p>
+    </a>
+
+</div>
+
+
+
+
 
 		</header>
 
+
 <!---------------------------------- About ----------------------------------->
-	<div class="text-in-body">
+	<div class="text-in-body" id="circle-down">
 
 		<h2><b>About Our Agency</b></h2>
 
 		<p>We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about 		designing websites and mobile apps. Clever use of technology and lean processes enable us to work faster and smarter.</p>
-		<img src="Screenshot from 2017-09-29 17-04-19.png">
+		<img src="about-me-signature.png">
 	</div>
 
 
 <!-------------------------------- First img pattern--------------------------->
 
 	<div class="bgs">
-	<div class="container">
-	<div class="row text-in-body2">
+	<div class="container-fluid img-fluid">
+	<div class="row text-in-body2" id="pad">
 
 
 		<div class="col-md-6 col-12 col-lg-3">
-		<i class="fa fa-heart-o" aria-hidden="true"></i>
+		<div class="d-flex flex-row">
+		<div class="fntawesome"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
 
-		<p>548</p>
-		<p id="h6">projects completed</p>
+		<p> 548 <br>projects completed</p>
+
+		</div>
 		</div>
 
 		<div class="col-md-6 col-12 col-lg-3">
-		<p>1465</p>
-		<p id="h6">Working Hours</p>
+		<div class="d-flex flex-row">
+		<div class="fntawesome"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+
+		<p>1465 <br>Working Hours</p>
+
+		</div>
 		</div>
 
 		<div class="col-md-6 col-12 col-lg-3">
-		<p>612</p>
-		<p id="h6">Positive Feedbacks</p>
+		<div class="d-flex flex-row">
+		<div class="fntawesome"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+
+		<p>612 <br>Positive Feedbacks</p>
+
+		</div>
 		</div>
 
 		<div class="col-md-6 col-12 col-lg-3">
-		<p>735</p>
-		<p id="h6">Happy Clients</p>
+		<div class="d-flex flex-row">
+		<div class="fntawesome"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+
+		<p>735 <br>Happy Clients</p>
+
+		</div>
 		</div>
 
 
@@ -116,49 +147,304 @@
 
 <!---------------------------- pics ----------------------------------------->
 
+	<div class="container" id="pad4">
+	<div class="row">
+
+
+		<div class="col-lg-4">
+		<img src="portfolio-7-sm.jpg" class="img-fluid pad2" alt="Responsive image">
+		<img src="portfolio-9-sm.jpg" class="img-fluid pad2" alt="Responsive image">
+		</div>
+
+		<div class="col-lg-4">
+		<img src="portfolio-4-sm.jpg" class="img-fluid pad2" alt="Responsive image">
+		<img src="portfolio-3-sm.jpg" class="img-fluid pad2" alt="Responsive image">
+		</div>
+
+		<div class="col-lg-4">
+		<img src="portfolio-5-sm.jpg" class="img-fluid pad2" alt="Responsive image">
+		</div>
+
+
+
+		<div class="col-lg-4">
+		<img src="portfolio-2-sm.jpg" class="img-fluid pad2" alt="Responsive image">
+		</div>
+
+		<div class="col-lg-4">
+		<img src="portfolio-6-sm.jpg" class="img-fluid pad2" alt="Responsive image">
+		</div>
+
+		<div class="col-lg-4">
+		<img src="portfolio-8-sm.jpg" class="img-fluid pad2" alt="Responsive image">
+		<img src="portfolio-12-sm.jpg" class="img-fluid pad2" alt="Responsive image">
+		</div>
+
+
+	</div>
+	</div>
+
+<!----------------------------------------Slide-------------------------------->
+
+	<div class="bgs">
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div id="paragragh1" role="listbox">
+    <div class="carousel-item active pad3">
+	<blockquote class="blockquoteme" >
+      		<p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking 		forward to start the next one asap.</p>
+	</blockquote>
+    </div>
+    <div class="carousel-item pad3">
+      	<blockquote class="blockquoteme">
+      		<p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking 		forward to start the next one asap.</p>
+	</blockquote>
+    </div>
+    <div class="carousel-item pad3">
+      	<blockquote class="blockquoteme">
+      		<p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking 		forward to start the next one asap.</p>
+	</blockquote>
+    </div>
+  </div>
+
+</div>
+
+
+	</div>
+
+<!---------------------------------------------------------------------------->
+
+	<div class="whitebg">
 	<div class="container">
 	<div class="row">
 
 
-		<div class="col-lg-4 pad">
-		<img src="22127170_1615739358487055_768417236_n.png" class="img-fluid pad" alt="Responsive image">
-		<img src="22127285_1615739361820388_762193974_n.png" class="img-fluid pad" alt="Responsive image">
+<div id="carouselExampleControls" class="carousel" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+			<!--------------------->
+    <div class="carousel-item active">
+
+		<div class="col-lg-3">
+      <img class="d-block img-fluid" src="partner-logo-1-dark.png">
 		</div>
+		<div class="col-lg-3">
+      <img class="d-block img-fluid" src="partner-logo-2-dark.png">
+		</div>
+		<div class="col-lg-3">
+      <img class="d-block img-fluid" src="partner-logo-3-dark.png">
+		</div>
+		<div class="col-lg-3">
+      <img class="d-block img-fluid" src="partner-logo-4-dark.png">
+		</div>
+
+    </div>
+			<!--------------------->
+    <div class="carousel-item">
+
+		<div class="col-lg-3">
+      <img class="d-block img-fluid" src="partner-logo-5-dark.png">
+		</div>
+		<div class="col-lg-3">
+      <img class="d-block img-fluid" src="partner-logo-6-dark.png">
+		</div>
+		<div class="col-lg-3">
+      <img class="d-block img-fluid" src="partner-logo-7-dark.png">
+		</div>
+		<div class="col-lg-3">
+      <img class="d-block img-fluid" src="partner-logo-8-dark.png">
+		</div>
+
+    </div>
+			<!--------------------->
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+	</div>
+	</div>
+	</div>
+<!---------------------------------------------------------------------------->
+
+	<div class="text-in-body">
+
+		<h2><b>Latest Blog</b></h2>
+
+		<p>Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus. Vestibulum gravida volutpat 			ipsum non ultrices</p>
+	</div>
+
+<!--------------------------------- cards ------------------------------------->
+
+	<div class="whitebg">
+	<div class="container">
+	<div class="row"  id="bgheight">
+
+
+<div id="carouselExampleControls3" class="carousel" data-ride="carousel">
+  <div class="#carouselExampleControls3">
+  <ol class="carousel-indicators pad2">
+    <li class="bg-dark" data-target="#carouselExampleControls3" data-slide-to="0" class="active"></li>
+    <li class="bg-dark" data-target="#carouselExampleControls3" data-slide-to="1"></li>
+  </ol>
+  </div>
+  <div class="carousel-inner" role="listbox">
+			<!--------------------->
+    <div class="carousel-item active">
 
 		<div class="col-lg-4">
-		<img src="22156741_1615739351820389_305351794_n.png" class="img-fluid pad" alt="Responsive image">
-		<img src="22155203_1615739321820392_586869905_n.png" class="img-fluid pad" alt="Responsive image">
+
+			<div class="card">
+			  <img class="card-img-top" src="post-1-mid.jpg" alt="Card image cap">
+			    <a href="#!" class="btn btn-dark">Design</a>
+			  <div class="card-body">
+			    <h4 class="card-title">Something I need to tell you</h4>
+			    <p class="card-text">
+			      That female isn't midst divide kind upon seas lights greater green creature lights brought.
+			    </p>
+			  </div>
+			</div>
+
 		</div>
+		<div class="col-lg-4">
+			<div class="card">
+			  <img class="card-img-top" src="post-3-mid.jpg" alt="Card image cap">
+			    <a href="#!" class="btn btn-dark">Nature</a>
+			  <div class="card-body">
+			    <h4 class="card-title">The History of Nature</h4>
+			    <p class="card-text">
+			      Third is fly. From one under in itself two waters, all own. Said male shall greater own grass.
+			    </p>
+			  </div>
+			</div>
+
+		</div>
+		<div class="col-lg-4">
+			<div class="card">
+			  <img class="card-img-top" src="post-4-mid.jpg" alt="Card image cap">
+			    <a href="#!" class="btn btn-dark">Nature</a>
+			  <div class="card-body">
+			    <h4 class="card-title">Ten things about Photography</h4>
+			    <p class="card-text">
+			      Be forth, god for rule face abundantly all our two winged made. Is whose morning female.
+			    </p>
+			  </div>
+			</div>
+
+		</div>
+
+
+    </div>
+			<!--------------------->
+    <div class="carousel-item">
 
 		<div class="col-lg-4">
-		<img src="22155053_1615739345153723_1400227142_n.png" class="img-fluid pad" alt="Responsive image">
+			<div class="card">
+			  <img class="card-img-top" src="post-5-mid.jpg" alt="Card image cap">
+			    <a href="#!" class="btn btn-dark">Branding</a>
+			  <div class="card-body">
+			    <h4 class="card-title">Are you doing the Right Way?</h4>
+			    <p class="card-text">
+			      Which all, morning isn't. Female and own living dry, and morning lesser first he stars under years thing.
+			    </p>
+			  </div>
+			</div>
+
 		</div>
-
-<!--another two imgs can't be fit -->
-
 		<div class="col-lg-4">
-		<img src="22156767_1615739371820387_1659564225_n.png" class="img-fluid pad" alt="Responsive image">
+			<div class="card">
+			  <img class="card-img-top" src="post-6-mid.jpg" alt="Card image cap">
+			    <a href="#!" class="btn btn-dark">Design</a>
+			  <div class="card-body">
+			    <h4 class="card-title">Why you should Always First?</h4>
+			    <p class="card-text">
+			      Lights give have herb. First. Seed lesser his a fruit. Stars good divide fish appear don't, third deep.
+			    </p>
+			  </div>
+			</div>
+
+		</div>
+		<div class="col-lg-4">
+			<div class="card">
+			  <img class="card-img-top" src="post-1-mid.jpg" alt="Card image cap">
+			    <a href="#!" class="btn btn-dark">Nature</a>
+			  <div class="card-body">
+			    <h4 class="card-title">Something I need to tell you</h4>
+			    <p class="card-text">
+			      That female isn't midst divide kind upon seas lights greater green creature lights brought.
+			    </p>
+			  </div>
+			</div>
 		</div>
 
-		<div class="col-lg-4">
-		<img src="22119104_1615739348487056_1132845933_n.png" class="img-fluid pad" alt="Responsive image">
-		</div>
+    </div>
+			<!--------------------->
+</div>
+	</div>
+	</div>
+	</div>
+<!----------------------------------------- Form ------------------------------->
 
-		<div class="col-lg-4">
-		<img src="22127204_1615739365153721_867164881_n.png" class="img-fluid pad" alt="Responsive image">
-		<img src="22119320_1615739338487057_724950780_n.png" class="img-fluid pad" alt="Responsive image">
-		</div>
+
+
+	<div id="graybg" class="container-fluid">
+	<div class="row">
+
+
+                       <div class="col-12 col-sm-6 col-md-5">
+                           <h2 class="text-black font-weight-bold">Contact Info:</h2><br>
+                    <p >Praesent interdum congue mauris, et fringilla lacus pel vitae. Quisque nisl mauris, aliquam eu ultrices vel, conse vitae sapien at imperdiet risus. Quisque cursus risus id. fermentum, in auctor quam consectetur.</p><br>
+                    <div><p><span class="font-weight-bold">Address:</span> 10111 Santa Monica Boulevard, LA</p></div>
+                    <div><p><span class=" font-weight-bold">Phone:</span>+44987065908</p></div>
+                    <div><p><span class=" font-weight-bold">Email:</span> info@Example.com</p></div>
+                    <div><span class="font-weight-bold">Fax:</span> +44 987 065 909</p></div>
+                    </div>
+                       <div class="col-12 col-sm-6 col-md-7"><br>
+                    <form>
+                              <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <input type="text" class="form-control"  placeholder="Your Name"><br>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <input type="text" class="form-control"  placeholder="Your Email">
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12">
+                                <input type="text" class="form-control" placeholder="Your Title">
+                            </div>
+                        </div><br><br>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12">
+                                 <textarea  class="form-control"  name="textarea" rows="8" placeholder="Your Comment" ></textarea>
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12">
+                                 <button type="button"class="btn btn-dark btn-lg btn-xl2">SEND MESSAGE</button>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+
+
 
 
 	</div>
 	</div>
 
-<!----------------------------------------img-------------------------------->
 
-
-	<div>
-		<img src="22139824_1615799278481063_496985697_o.png" id="img" class="img-fluid pad" alt="Responsive image">
-	</div>
 
 <!----------------------------------------- Scripts ------------------------->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
